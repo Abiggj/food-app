@@ -1,0 +1,97 @@
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes heartBeat {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(0.9);
+    }
+    40% {
+      transform: scale(1.1);
+    }
+    60% {
+      transform: scale(0.9);
+    }
+    80% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Bootstrap Animations */
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  .heartBeat {
+    animation-name: heartBeat;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Custom Styles */
+  body {
+    background-color: #f8f9fa;
+  }
+  
+  .cart-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    animation: fadeInUp 1s;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
+  .delete-icon {
+    color: #dc3545;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .delete-icon:hover {
+    color: #b02a37;
+    transform: scale(1.2);
+  }
+  
+  .total-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745;
+    animation: heartBeat 1.5s infinite;
+  }
+  
+  .checkout-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: scale(1.05);
+  }

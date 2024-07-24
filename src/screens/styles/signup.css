@@ -1,0 +1,112 @@
+/* styles.css */
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Bootstrap Animations */
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  .shake {
+    animation-name: shake;
+  }
+  
+  /* Custom Styles */
+  .signup-container {
+    background-image: url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-color: transparent;
+  }
+  
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-color: #9370db;
+    box-shadow: 0 0 0 0.2rem rgba(147, 112, 219, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #9370db;
+    border-color: #9370db;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    transform: scale(1.05);
+  }
+  
+  .btn-secondary {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #222;
+    border-color: #222;
+    transform: scale(1.05);
+  }

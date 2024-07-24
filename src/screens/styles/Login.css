@@ -1,0 +1,90 @@
+/* styles.css */
+
+/* Custom Animations */
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Bootstrap Animations */
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+  
+  .shake {
+    animation-name: shake;
+  }
+  
+  /* Custom Styles */
+  body {
+    background-image: url("https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .btn-custom {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: scale(1.05);
+  }
+  
+  .btn-danger {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    animation: shake 0.5s;
+  }
